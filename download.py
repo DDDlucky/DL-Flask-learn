@@ -1,5 +1,9 @@
+# -*- coding: utf-8 -*-
+
 from flickrapi import FlickrAPI #FlikcrAPIクライアントのクラス定義
 from urllib.request import urlretrieve #コマンドラインからhttp通信をする関数
+import ssl
+ssl._create_default_https_context = ssl._create_unverified_context
 import os, time, sys #Pythonからシステムにアクセスする関数, タイマー関数
 
 key = "fae8b8e5d6a8102c7527b8bb2cf2e67c"

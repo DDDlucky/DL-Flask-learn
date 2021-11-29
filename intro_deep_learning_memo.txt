@@ -1,0 +1,46 @@
+https://mathematical-free.com/?p=1263
+
+conda create -n tf112cpu python==3.6
+
+conda create -n tf112cpu -c conda-forge python=3.6
+
+
+conda activate tf112cpu
+source activate tf112cpu
+
+python3 download.py monkey
+
+cd desktop/intro_deep_learning
+
+Key:
+fae8b8e5d6a8102c7527b8bb2cf2e67c
+
+Secret:
+9969c774ad3434e1
+
+
+intro_deep_learning % python3 download.py crow
+
+% pip3 list
+
+
+ scores = model.evaluate(X, y, verbose=1)　#評価関数に投入
+                                            ^
+SyntaxError: invalid character in identifier
+
+% python3 animal_cnn.py
+File "animal_cnn.py", line 12, in <module>
+    opt = tf.keras.optimizers.adam()
+AttributeError: module 'keras.api._v2.keras.optimizers' has no attribute 'adam'
+(tf112cpu) ***MacBook-Air intro_deep_learning % python3 animal_cnn.py
+  File "animal_cnn.py", line 8
+    from tensorflow import tf.keras
+                             ^
+SyntaxError: invalid syntax
+
+
+ % python3 animal_cnn.py
+ File "animal_cnn.py", line 10, in <module>
+    from keras.optimizers import Adam
+ImportError: cannot import name 'Adam' from 'keras.optimizers' (/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/keras/optimizers.py)
+
